@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
             color: const Color(0xffFA9532),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return   Numbers();
+                return Numbers();
               }));
             },
           ),

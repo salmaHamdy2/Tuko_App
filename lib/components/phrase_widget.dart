@@ -11,9 +11,7 @@ class phrasewidget extends StatelessWidget {
   Color color;
   @override
   Widget build(BuildContext context) {
-    
     return SizedBox(
-     
       height: 128,
       child: MyContainer(
         number: number,

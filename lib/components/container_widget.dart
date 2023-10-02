@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:language_app/models/item.dart';
-import 'package:audioplayers/audioplayers.dart';
 
 // ignore: camel_case_types
 class MyContainer extends StatelessWidget {
@@ -30,14 +29,14 @@ class MyContainer extends StatelessWidget {
                 height: 10,
               ),
               Text(number.en,
-                  style: TextStyle(color: Color.fromARGB(255, 83, 41, 13), fontSize: 18)),
+                  style: TextStyle(
+                      color: Color.fromARGB(255, 83, 41, 13), fontSize: 18)),
             ]),
           ),
           IconButton(
               padding: EdgeInsets.only(right: 6),
               onPressed: () {
-                final player = AudioPlayer();
-                player.play(AssetSource(number.sound));
+                number.playSound();
               },
               icon: Icon(
                 Icons.arrow_right,

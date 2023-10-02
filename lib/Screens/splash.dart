@@ -8,9 +8,16 @@ class Splash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: AnimatedSplashScreen(splashIconSize: 200,
-        backgroundColor: const Color(0xffEEEBD6),
-        splash: const CircleAvatar(radius: 100,backgroundImage: AssetImage("assets/images/splash/1.png",),), nextScreen: const HomeScreen()),
+      body: AnimatedSplashScreen(
+          splashIconSize: 200,
+          backgroundColor: const Color(0xffEEEBD6),
+          splash: const CircleAvatar(
+            radius: 100,
+            backgroundImage: AssetImage(
+              "assets/images/splash/1.png",
+            ),
+          ),
+          nextScreen: const HomeScreen()),
     );
   }
 }
