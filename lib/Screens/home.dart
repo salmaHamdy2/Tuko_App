@@ -3,6 +3,7 @@ import 'package:language_app/Screens/colors.dart';
 import 'package:language_app/Screens/family.dart';
 import 'package:language_app/Screens/numbers.dart';
 import 'package:language_app/Screens/phrases.dart';
+import 'package:language_app/Screens/translator.dart';
 import 'package:language_app/components/category_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -57,6 +58,15 @@ class HomeScreen extends StatelessWidget {
               }));
             },
           ),
+          Category(
+            txt: "Translator",
+            color: const Color.fromARGB(255, 211, 80, 124),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return const Translator();
+              }));
+            },
+          )
         ],
       ),
     );
